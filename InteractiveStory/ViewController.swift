@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                     }
                     
                     if let pageController = segue.destinationViewController as? PageController {
-                        pageController.page = Adventure.story("SupremeCockSucker")
+                        pageController.page = Adventure.story("Richard")
                     }
                 }
             } catch Error.NoName {
