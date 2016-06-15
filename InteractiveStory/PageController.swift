@@ -66,7 +66,7 @@ class PageController: UIViewController {
 
     override func viewWillLayoutSubviews() {
         view.addSubview(artwork)
-        artwork.translatesAutoresizingMaskIntoConstraints = false
+        artwork.translatesAutoresizingMaskIntoConstraints = false //Always set this to false otherwise the system adds its own constraints to views which might conflict with ours.
         
         NSLayoutConstraint.activateConstraints([
             artwork.topAnchor.constraintEqualToAnchor(view.topAnchor),
