@@ -14,6 +14,9 @@
 		191B62F81D0F8A2600ABF850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191B62F61D0F8A2600ABF850 /* LaunchScreen.storyboard */; };
 		191B63021D0FBA6200ABF850 /* InteractiveStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B63011D0FBA6200ABF850 /* InteractiveStory.swift */; };
 		191B63081D0FC5C900ABF850 /* PageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191B63071D0FC5C900ABF850 /* PageController.swift */; };
+		191B630D1D10D52400ABF850 /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 191B630A1D10D52400ABF850 /* HappyEnding.wav */; };
+		191B630E1D10D52400ABF850 /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = 191B630B1D10D52400ABF850 /* Ominous.wav */; };
+		191B630F1D10D52400ABF850 /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 191B630C1D10D52400ABF850 /* PageTurn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		191B62F91D0F8A2600ABF850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		191B63011D0FBA6200ABF850 /* InteractiveStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveStory.swift; sourceTree = "<group>"; };
 		191B63071D0FC5C900ABF850 /* PageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageController.swift; sourceTree = "<group>"; };
+		191B630A1D10D52400ABF850 /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = HappyEnding.wav; path = ../../../../../Downloads/Sounds/HappyEnding.wav; sourceTree = "<group>"; };
+		191B630B1D10D52400ABF850 /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Ominous.wav; path = ../../../../../Downloads/Sounds/Ominous.wav; sourceTree = "<group>"; };
+		191B630C1D10D52400ABF850 /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = PageTurn.wav; path = ../../../../../Downloads/Sounds/PageTurn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +72,19 @@
 				191B62F41D0F8A2600ABF850 /* Assets.xcassets */,
 				191B62F61D0F8A2600ABF850 /* LaunchScreen.storyboard */,
 				191B62F91D0F8A2600ABF850 /* Info.plist */,
+				191B63091D10D50600ABF850 /* Resources */,
 			);
 			path = InteractiveStory;
+			sourceTree = "<group>";
+		};
+		191B63091D10D50600ABF850 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				191B630A1D10D52400ABF850 /* HappyEnding.wav */,
+				191B630B1D10D52400ABF850 /* Ominous.wav */,
+				191B630C1D10D52400ABF850 /* PageTurn.wav */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +119,7 @@
 				TargetAttributes = {
 					191B62E91D0F8A2500ABF850 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = TX73VT72QG;
 					};
 				};
 			};
@@ -128,8 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				191B630E1D10D52400ABF850 /* Ominous.wav in Resources */,
 				191B62F81D0F8A2600ABF850 /* LaunchScreen.storyboard in Resources */,
 				191B62F51D0F8A2600ABF850 /* Assets.xcassets in Resources */,
+				191B630D1D10D52400ABF850 /* HappyEnding.wav in Resources */,
+				191B630F1D10D52400ABF850 /* PageTurn.wav in Resources */,
 				191B62F31D0F8A2600ABF850 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,10 +278,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InteractiveStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dxy159.InteractiveStory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -268,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InteractiveStory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dxy159.InteractiveStory;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
